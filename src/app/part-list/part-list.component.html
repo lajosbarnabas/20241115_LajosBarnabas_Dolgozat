@@ -1,0 +1,19 @@
+<div class="card-types">
+  @for (item of computerParts; track $index) {
+    <div class="card-type" (click)="selectedComputerPart = item">
+      <h2>{{item.name}}</h2>
+      <img class="card-img" [src]="item.imageUrl" [alt]="item.name">
+    </div>
+  }
+</div>
+
+<div class="shopping-cart">
+  @for (item of PartsInCart; track $index) {
+  <span>{{item.name}}</span>
+  <span class="price">{{item.price}}</span>
+  }
+</div>
+
+@if(selectedComputerPart){
+  <app-part-item [oneComputerPart]="selectedComputerPart"></app-part-item>
+}

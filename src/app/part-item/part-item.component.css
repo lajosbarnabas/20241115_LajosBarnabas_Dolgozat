@@ -1,0 +1,45 @@
+.card{
+  width: 600px;
+  margin: 12px auto;
+  border: 3px solid #040;
+  border-radius: 10px;
+  background-color: #cfc;
+  padding: 10px;
+}
+
+.div-card{
+  text-align: center;
+  margin: 0 0 4px;
+}
+
+.price{
+  float: right;
+}
+
+p{
+  text-align: justify;
+}
+
+button{
+  padding: 6px;
+  border-radius: 10px;
+  background-color: #040;
+  color: #cfc;
+  font-weight: 700;
+  cursor: pointer;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0;
+}
+
+table, td, tr{
+  border: 1px solid #040;
+}
+
+table{
+  border-collapse: collapse;
+  width: 350px;
+  margin: 0 auto;
+}

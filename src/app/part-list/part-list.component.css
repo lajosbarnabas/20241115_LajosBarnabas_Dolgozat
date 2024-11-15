@@ -1,0 +1,39 @@
+.card-types{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+  margin-top: 20px;
+  overflow-y: auto;
+  padding-bottom: 10px;
+}
+
+.card-type{
+  width: 200px;
+  padding: 10px;
+  border: 3px solid #040;
+  border-radius: 10px;
+  background-color: #cfc;
+  margin: 6px;
+  color: #040;
+}
+
+.card-img{
+  width: 70%;
+  margin: 0 15%;
+  cursor: pointer;
+}
+
+.shopping-cart{
+  width: 600px;
+  padding: 10px;
+  border: 3px solid #040;
+  border-radius: 10px;
+  background-color: #cfc;
+  margin: 6px auto;
+  color: #040;
+  background-image: url(/images/shopping-cart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 60px;
+  font-weight: 700;
+}

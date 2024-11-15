@@ -1,0 +1,21 @@
+<div class="card">
+  @for (item of oneComputerPart?.parts; track $index) {
+    <h1>{{item.name}}</h1>
+    <div class="parts">
+      <h4>
+        <span>{{item.name}}</span>
+        <span class="price">{{item.price}}</span>
+      </h4>
+      <p>{{item.description}}</p>
+      <table>
+        @for (item of item.properties; track $index) {
+        <tr>
+          <td>{{item.key}}</td>
+          <td>{{item.value}}</td>
+        </tr>
+      }
+      </table>
+      <button (click)="addToCart(item)"><img src="/public/images/shopping-cart.svg" alt="shopping-cart"><span>Kosárba</span></button>
+    </div>
+  }
+</div>
